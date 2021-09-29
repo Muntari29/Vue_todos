@@ -1,10 +1,12 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <Hello/>
+  <h1>
+    {{ msg }}
+  </h1>
+  <Hello />
 </template>
 
 <script>
-import Hello from "~/components/Hello";
+import Hello from '~/components/Hello'
 
 export default {
   components: {
@@ -12,10 +14,10 @@ export default {
   },
   data() {
     return {
-      msg: "hello .....!",
-    };
+      msg: 'hello Vue!',
+    }
   },
-};
+}
 </script>
 
 
