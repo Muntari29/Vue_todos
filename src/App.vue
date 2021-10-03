@@ -1,21 +1,25 @@
 <template>
-  <h1>
-    {{ msg }}
-  </h1>
-  <Hello />
+  <div>
+    <header>
+      <h1>
+        {{ title }}
+      </h1>
+    </header>
+    <main>
+      <TodoForm />
+    </main>
+  </div>
 </template>
 
 <script>
-import Hello from '~/components/Hello'
+import TodoForm from '~/components/TodoForm'
 
 export default {
   components: {
-    Hello,
+    TodoForm,
   },
   data() {
-    return {
-      msg: 'hello Vue!',
-    }
+    return this.$store.state
   },
 }
 </script>
